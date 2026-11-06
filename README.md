@@ -74,6 +74,15 @@ Install the MK8D **4.0.1 update** (and Booster Course Pass DLC if you own it) on
 
 Then remove the old CTGP files from `atmosphere/contents/0100152000022000` so the original game runs vanilla online.
 
+## Nextendo online setup
+
+Online play goes through [Nextendo Network](https://nextendo.network), not this repo. Follow their guide to install the Nextendo app (Prelude) and link your console. In short:
+
+1. Create a Nextendo account and confirm your e-mail.
+2. Install the Nextendo app and set the mode to **Nextendo**. It writes the Atmosphère hosts file and the game patches for you.
+3. Link your console from the app, then link Discord (see `2306-0807` below).
+4. Check [nextendo.network/status](https://nextendo.network/status) if matchmaking fails.
+
 ## Nextendo online checklist
 
 | Error | Meaning | Fix |
@@ -85,6 +94,12 @@ Then remove the old CTGP files from `atmosphere/contents/0100152000022000` so th
 | `2123-0011` | Blank PRODINFO on emuMMC | `blank_prodinfo_emummc=0` in `exosphere.ini` |
 
 The full list is on the [Nextendo wiki](https://wiki.nextendo.network/errors).
+
+## Tip: PS4/PS5 controllers
+
+[MissionControl](https://github.com/ndeadly/MissionControl) lets DualShock 4 and DualSense pair over Bluetooth. Firmware 23 needs **v0.16.0 or newer**. Make sure `atmosphere/contents/010000000000bd00/flags/boot2.flag` exists, or the sysmodule never starts and the controller never shows up.
+
+Buttons map by position, not by symbol: ○ = A, ✕ = B, △ = X, □ = Y. To accelerate with R2, swap **ZR ↔ A** in *System Settings → Controllers and Sensors → Change Button Mapping*.
 
 ## Why the title ID is fixed
 
